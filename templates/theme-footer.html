@@ -1,5 +1,6 @@
 ## mako
 <%! from django.core.urlresolvers import reverse %>
+<%namespace name='static' file='/static_content.html'/>
 <div class="wrapper-footer">
   <footer>
     <div class="colophon">
@@ -23,8 +24,8 @@
   <div class="su-container">
     <div class="su-row">
       <div id="su-footer-logo" class="span2">
-        <a href="http://www.stanford.edu">
-          <img src="https://www.stanford.edu/su-identity/images/footer-stanford-logo@2x.png" alt="Stanford University" width="105" height="49"/>
+        <a href="https://www.codecoalition.com/">
+          <img src="${static.url('themes/stanford/images/codecoalition-logo_76x49.png')}" alt="Stanford University" width="76" height="49"/>
         </a>
       </div>
       <div id="su-footer-text" class="span10">
