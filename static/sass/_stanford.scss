@@ -208,6 +208,12 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
     float: right;
 }
 
-.home .media {
+//-------------------------------
+// Central box on home/courses
+//-------------------------------
+
+.home .media,
+.content-wrapper .find-courses header.search .inner-wrapper.main-search hgroup {
     display: none;
 }
+
