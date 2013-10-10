@@ -471,7 +471,7 @@ body header.global.slim {
 body.index {
     header.global {
         height: 327px;
-        background-image: url("/static/themes/stanford/images/cc_hugeheader_home-01.png");
+        background-image: url("../themes/stanford/images/cc_hugeheader_home-01.png");
         background-position: 45% -80%;
         background-size: auto 800px;
     }
@@ -614,7 +614,7 @@ body.index {
         float: none;
         clear: none;
         background-color: #3ebced;
-        background-image: url(../images/cc_hugeheader_home-01.png);
+        background-image: url(../themes/stanford/images/cc_hugeheader_home-01.png);
         background-position: 45% -80%;
         background-size: auto 800px;
     }
@@ -653,7 +653,7 @@ body.index {
         margin-bottom: -94px;
         padding-top: 35px;
         padding-bottom: 50px;
-        background-image: url(/static/themes/stanford/images/faq_bg.png);
+        background-image: url(../themes/stanford/images/faq_bg.png);
         background-size: cover;
         background-attachment: fixed;
     }
@@ -694,7 +694,6 @@ body.index {
         margin-left: 76px;
         padding-left: 0px;
         float: none;
-        background-image: url(../images/example-bg.png);
         background-size: 125px;
     }
     .coursegallery {
