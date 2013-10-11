@@ -217,6 +217,11 @@ html body, html, body {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
 
     .content-wrapper {
         background-color: #fff;
@@ -358,7 +363,7 @@ body header.global.slim {
     .social-wrapper {
         margin-top: -26px;
         margin-right: 0px;
-        margin-left: 9px;
+        margin-left: 4px;
         padding-right: 0px;
         padding-left: 0px;
         float: right;
@@ -475,7 +480,7 @@ body.index {
         background-position: 45% -80%;
         background-size: auto 800px;
     }
-   
+
     .hero-text {
         margin-top: -221px;
         padding-top: 0px;
@@ -513,6 +518,9 @@ body.index {
         letter-spacing: 1px;
         text-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
         text-transform: none;
+        border: 0px solid black;
+        background-color: rgba(0, 0, 0, 0);
+        direction: ltr;
     }
 
     h3 {
@@ -526,15 +534,19 @@ body.index {
         text-align: left;
         letter-spacing: 1px;
         text-transform: uppercase;
+        border-bottom: 0px none rgba(0, 0, 0, 0.29);
     }
 
     h4 {
         margin: 10px 0px;
         padding-left: 25px;
-        font-size: 18px;
         line-height: 24px;
-        font-weight: 400;
+        font-weight: 300;
         text-align: left;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: black;
+        font-size: 21px;
     }
 
     h5 {
@@ -545,7 +557,7 @@ body.index {
         color: #2f4f59;
         font-size: 14px;
         line-height: 20px;
-        font-weight: 700;
+        font-weight: 300;
     }
 
     h6 {
@@ -562,6 +574,7 @@ body.index {
         margin-bottom: 5px;
         text-align: left;
         color: #777;
+        line-height: 21px;
     }
 
     .button {
@@ -819,54 +832,183 @@ body.view-login {
 }
 
 //--------------------------------
-// Payment form
+// Checkout form
 //--------------------------------
 
-.payment {
-    .payment-fields-div {
-        margin: 30px 90px 30px 60px;
-        padding-right: 30px;
-        padding-left: 30px;
-        border: 3px solid #56bbea;
-        box-shadow: none;
-        opacity: 1;
-    }
-    .payment-field {
-        width: 80%;
-        margin-top: 20px;
-        margin-bottom: 0px;
-        border: 1px solid #56bbea;
-        border-radius: 7px;
-    }
-    .payment-field.promo-field {
-        width: 50%;
-        margin-top: 10px;
-    }
-    .payment-field.sec-code {
-        width: 60%;
-        margin-right: 0px;
-    }
-    .payment-field.exp-date {
-        padding-right: 0px;
-    }
-    .payment-button {
-        margin-top: 20px;
-        border-radius: 8px;
-        background-color: #56bbea;
-        -webkit-transition: all 500ms ease;
-        -o-transition: all 500ms ease;
-        transition: all 500ms ease;
-    }
-    .payment-info-div {
-        margin: 30px 30px 30px 0px;
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    .payment-paragraph {
-        margin-left: 30px;
-    }
-    .promo-label {
-        margin-top: 15px;
+body.register.verification-process .content-wrapper {
+    background-color: #fff;
+
+    .checkout-form {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .payment-fields-div {
+            margin: 30px 90px 30px 60px;
+            padding-right: 30px;
+            padding-left: 30px;
+            border: 3px solid rgba(86, 187, 234, 0.29);
+            box-shadow: none;
+            opacity: 1;
+        }
+        .payment-field {
+            width: 80%;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.29);
+            margin-left: 31px;
+            padding-right: 0px;
+            border-radius: 7px;
+            color: black;
+        }
+        .payment-field.promo-field {
+            width: 50%;
+            margin-top: 10px;
+        }
+        .payment-field.sec-code {
+            width: 60%;
+            margin-right: 0px;
+        }
+        .payment-field.exp-date {
+            padding-right: 0px;
+        }
+        .payment-button {
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #56bbea;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            margin-left: 31px;
+        }
+        .payment-info-div {
+            margin: 30px 58px 30px 0px;
+            padding-right: 74px;
+            padding-left: 0px;
+        }
+        .payment-paragraph {
+            font-family: Lato, sans-serif;
+            width: 262px;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 300;
+        }
+        .promo-label {
+            margin-top: 15px;
+            padding-right: 0px;
+            padding-left: 31px;
+        }
+        .form-container {
+            width: 580px;
+            height: 354px;
+            padding-top: 62px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .column-subblock {
+            padding-top: 16px;
+            padding-bottom: 1px;
+        }
+        .h3-sub {
+            font-size: 21px;
+            line-height: 4px;
+            font-weight: 300;
+        }
+        .quotes {
+            margin-top: 37px;
+            font-weight: 300;
+            text-align: center;
+        }
+        .below-payment {
+            margin-right: 50px;
+            margin-left: 67px;
+            border-top: 1px solid rgba(0, 0, 0, 0.29);
+            margin-bottom: 40px;
+        }
+        .column2-payment {
+            margin-top: 28px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .callout {
+            margin-top: -157px;
+            margin-bottom: 0px;
+            padding-top: 148px;
+            padding-left: 2px;
+            color: black;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .checkouth2 {
+            margin-top: 0px;
+            margin-left: 10px;
+            background-color: rgba(86, 187, 234, 0.29);
+            font-family: Lato, sans-serif;
+            color: black;
+            line-height: 45px;
+            font-style: normal;
+            font-weight: 300;
+            text-align: left;
+            text-shadow: none;
+            font-size: 30px;
+            text-transform: none;
+        }
+        .checkouth3 {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+            text-transform: none;
+            padding: 15px 0 5px;
+            color: rgb(34, 34, 34);
+            font-family: Lato, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            text-align: left;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 15px 0;
+            line-height: 20px;
+        }
+        .checkouth3 .price-with-coupon {
+            font-size: 21px;
+            font-weight: 300;
+        }
+        .checkouth4 {
+            font-family: Lato, sans-serif;
+            margin: 10px 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 25px;
+            color: black;
+            font-size: 21px;
+            line-height: 24px;
+            font-weight: 300;
+            text-align: left;
+        }
+        .w-input:focus {
+            border-color: rgba(82, 168, 236, 0.8);
+            outline: 0px none;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+        }
+        .w-input {
+            font-size: 14px;
+            font-family: Lato,sans-serif;
+        }
+        .promo-label {
+            font-family: Lato,sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgb(86, 187, 234);
+        }
+        .payment-button {
+            text-shadow: none;
+            box-shadow: none;
+            border: none;
+            background-image: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+        .invalid {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red;
+        }
     }
 }
 
