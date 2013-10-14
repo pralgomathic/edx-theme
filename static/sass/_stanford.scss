@@ -577,7 +577,7 @@ body.index {
         line-height: 21px;
     }
 
-    .button {
+    .content-wrapper .button {
         display: inline-block;
         margin-top: 20px;
         margin-left: 0px;
@@ -601,7 +601,7 @@ body.index {
         text-shadow: none;
         padding: 10px 20px;
     }
-    .button:hover,
+    .content-wrapper .button:hover,
     input[type="submit"]:hover {
         border: 0px none rgb(182, 182, 182);
         background-color: rgb(119, 119, 119);
@@ -609,6 +609,13 @@ body.index {
         transition: none 0s ease 0s;
         color: white;
         font-weight: 700;
+    }
+
+    .button.newsletter {
+        line-height: 20px;
+        margin-top: 19px;
+        font-size: 14px;
+        font-weight: 300px;
     }
 
     .section {
@@ -833,6 +840,10 @@ body.view-login {
         width: 600px;
         height: 65px;
     }
+}
+
+#field-honorcode {
+    display: none;
 }
 
 //--------------------------------
