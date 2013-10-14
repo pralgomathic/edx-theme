@@ -1047,3 +1047,15 @@ body .dashboard {
 body nav.course-material .inner-wrapper {
     max-width: 960px;
 }
+
+
+//-----------------------------------------------
+// Static pages
+//-----------------------------------------------
+
+body .static-container {
+    p + h2 {
+        margin-bottom: 20px;
+    }
+}
+
