@@ -238,7 +238,7 @@ body .container {
 //--------------------------------
 
 html body {
-    .m-btn-edged, .m-btn-base, .m-btn-primary, header.global .nav-courseware li .cta, header.global .nav-global li a, .login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware, .m-btn-secondary, .view-partial-mktgregister .action.is-registered, .view-partial-mktgregister .action.registration-closed, .view-partial-mktgregister .action.coming-soon, .dashboard .my-courses .empty-dashboard-message a {
+    .m-btn-edged, .m-btn-base, .m-btn-primary, header.global .nav-courseware li .cta, header.global .nav-global li a, .login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware, .m-btn-secondary, .view-partial-mktgregister .action.is-registered, .view-partial-mktgregister .action.registration-closed, .view-partial-mktgregister .action.coming-soon, .dashboard .my-courses .empty-dashboard-message a, .dashboard .my-courses .course .info .enter-course, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register {
         border-radius: 12px;
         text-transform: uppercase;
         font-weight: 500;
@@ -250,7 +250,20 @@ html body {
         margin-top: -2px;
         font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
     }
+
+    .dashboard .my-courses .course .info .enter-course,
+    .dashboard .my-courses .course .info .enter-course:hover,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover:not(:disabled),
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled) {
+        box-shadow: none;
+        border: none;
+        background-image: none;
+        text-shadow: none;
+    }
 }
+
 
 //--------------------------------
 // Header
