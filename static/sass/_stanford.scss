@@ -1061,6 +1061,11 @@ body nav.course-material .inner-wrapper {
     max-width: 960px;
 }
 
+body {
+    h1.top-header, div.course-wrapper section.course-content ol.vert-mod > li header, div.info-wrapper section.updates > h1, div.syllabus h1, div.profile-wrapper section.course-info header, div.gradebook-wrapper section.gradebook-content h1, div.static_tab_wrapper h1, .instructor-dashboard-wrapper section.instructor-dashboard-content h1, section.instructor-dashboard-content-2 h1 {
+        font-weight: 300;
+    }
+}
 
 //-----------------------------------------------
 // Static pages
