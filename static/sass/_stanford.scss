@@ -849,9 +849,15 @@ body.index {
 
 body.view-register, 
 body.view-login {
-    .introduction header h1 {
+    .introduction header .title {
         width: 600px;
         height: 65px;
+        margin-top: 0px;
+        left: 0px;
+
+        .title-sub {
+            margin-left: 0;
+        }
     }
 }
 
