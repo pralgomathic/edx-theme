@@ -26,15 +26,15 @@ $sandstone-50: lighten($sandstone, 9%);
 $sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
 
 //Gray Color Variables
-$gray: #3f3c30; //Main Text Color
+$black: rgb(51, 51, 51);
+$black-80: lighten($black, 18.25%);
+
+$gray: $black; //Main Text Color
 $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 
 $gray-3: #e9e6df; //Block/Course BG Color
 $gray-2: #f2f1eb;
 $gray-1: #fbfbf9; //Main BG Color
-
-$black: #2e2d29;
-$black-80: #585754;
 
 
 
@@ -212,7 +212,7 @@ $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
 
 html body, html, body {
     height: auto;
-    color: #777;
+    color: $base-font-color;
     background-color: #fff;
     font-size: 14px;
     line-height: 21px;
@@ -486,54 +486,22 @@ body header.global.slim {
 // Home
 //--------------------------------
 
-body.index {
-    header.global {
-        height: 327px;
-        background-image: url("../themes/stanford/images/cc_hugeheader_home-01.png");
-        background-position: 45% -80%;
-        background-size: auto 800px;
-    }
+body .homepage-content {
 
-    .hero-text {
-        margin-top: -221px;
-        padding-top: 0px;
-        position: absolute;
-        left: 50%;
-        z-index: 20;
-        margin-left: -380px;
-    }
-    .about-text {
-        margin: 20px auto;
-    }
+    /* General ********************************/
 
-    .hero-text h1, .about-text h1 {
+    h1 {
         margin: 10px 0px;
-        color: white;
-        font-size: 100px;
+        font-size: 38px;
         line-height: 44px;
-        text-align: center;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-shadow: rgba(33, 33, 33, 0.24) 0px 1px 0px;
-        font-weight: bold;
+        font-weight: 700;
     }
 
-    .hero-text h2 {
-        margin: 10px 0px 35px;
-        box-shadow: none;
-        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
-        color: #2f4e58;
-        font-size: 30px;
+    h2 {
+        margin: 10px 0px;
+        font-size: 32px;
         line-height: 36px;
-        font-style: italic;
-        font-weight: 100;
-        text-align: center;
-        letter-spacing: 1px;
-        text-shadow: rgba(0, 0, 0, 0.24) 0px 1px 0px;
-        text-transform: none;
-        border: 0px solid black;
-        background-color: rgba(0, 0, 0, 0);
-        direction: ltr;
+        font-weight: 700;
     }
 
     h3 {
@@ -541,7 +509,7 @@ body.index {
         margin-left: 0px;
         padding-bottom: 15px;
         color: #222;
-        font-size: 21px;
+        font-size: 24px;
         line-height: 30px;
         font-weight: 300;
         text-align: left;
@@ -559,7 +527,7 @@ body.index {
         padding-top: 0px;
         padding-bottom: 0px;
         color: black;
-        font-size: 21px;
+        font-size: 18px;
     }
 
     h5 {
@@ -582,15 +550,23 @@ body.index {
         font-weight: 700;
     }
 
+    .subheaders {
+        margin-top: 20px;
+        padding-bottom: 10px;
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
     p {
         width: 188px;
         margin-bottom: 5px;
         text-align: left;
-        color: #777;
+        color: $base-font-color;
         line-height: 21px;
     }
 
-    .content-wrapper .button {
+    .button {
         display: inline-block;
         margin-top: 20px;
         margin-left: 0px;
@@ -614,7 +590,7 @@ body.index {
         text-shadow: none;
         padding: 10px 20px;
     }
-    .content-wrapper .button:hover,
+    .button:hover,
     input[type="submit"]:hover {
         border: 0px none rgb(182, 182, 182);
         background-color: rgb(119, 119, 119);
@@ -623,7 +599,6 @@ body.index {
         color: white;
         font-weight: 700;
     }
-
     .button.newsletter {
         line-height: 20px;
         margin-top: 19px;
@@ -633,8 +608,8 @@ body.index {
 
     .section {
         margin-bottom: 0px;
-        padding-top: 90px;
-        padding-bottom: 90px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .section.header {
         position: static;
@@ -681,26 +656,218 @@ body.index {
         -o-transition: all 500ms ease;
         transition: all 500ms ease;
     }
-    .section.bg-image {
-        margin-top: -50px;
-        margin-bottom: -94px;
-        padding-top: 35px;
-        padding-bottom: 50px;
-        background-image: url(../themes/stanford/images/faq_bg.png);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    .services {
-        padding-right: 20px;
-        padding-left: 20px;
-        text-align: left;
-    }
     .icon {
         margin-bottom: 0px;
         margin-left: -22px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
+
+    /* Learn/Practice/Build ***********/
+
+    .backgroundband {
+        height: 580px;
+        margin-top: 330px;
+        background-color: rgb(63, 189, 237);
+    }
+
+    .abovefold {
+        margin-top: -910px;
+        height: 870px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(../themes/stanford/images/Background_Header-02.png);
+        background-position: 50% 0px;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .lpb {
+        padding-top: 94px;
+        padding-bottom: 0px;
+    }
+    .lpb_column {
+        margin-top: 1px;
+    }
+    .lpb_icon {
+        margin-right: 0px;
+        margin-left: -94px;
+        padding-left: 364px;
+        float: none;
+        text-align: right;
+        height: 96px;
+    }
+    .lpb_text {
+        margin-left: -113px;
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+        font-family: Lato, sans-serif;
+        color: #5d5d5d;
+        font-size: 56px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    /* Why? ***************************/
+
+    .whycc_text {
+        font-family: Lato, sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .whycc_head {
+        padding-bottom: 10px;
+        font-family: Lato, sans-serif;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        text-transform: none;
+    }
+    .whycc {
+        margin-top: 95px;
+    }
+
+    /* How it works *******************/
+
+    .howitworks {
+        .howitworks_bordersub {
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .howitworksheader {
+            font-family: Lato, sans-serif;
+            color: #3fbded;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 0;
+        }
+
+        .howitworkstext {
+            padding-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .howitworks_columns {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+    }
+
+    /* Previous students **************/
+
+    .previousstudent {
+        padding-top: 0px;
+        background-color: #e6e6e6;
+        padding-bottom: 20px;
+
+        .ps_text {
+            display: block;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 20px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .ps_container {
+            background-color: #fff;
+            margin-right: 1px;
+            padding-right: 0px;
+            border: 1px solid white;
+            border-radius: 13px;
+            background-image: -webkit-linear-gradient(white, white);
+            background-image: -o-linear-gradient(white, white);
+            background-image: linear-gradient(white, white);
+        }
+        .ps_header {
+            font-family: Lato, sans-serif;
+            font-weight: 600;
+            text-align: center;
+            padding-left: 0;
+        }
+        .hp_text {
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            font-size: 12px;
+        }
+
+        .studenttests.image {
+            margin: 10px 18px 0;
+        }
+
+    }
+
+    /* Reviews ************************/
+
+    .reviews {
+        .reviews.individual {
+            height: 75px;
+            margin-bottom: 15px;
+            background-color: #e6e6e6;
+            font-size: 12px;
+        }
+        .reviews.individual.leftbar {
+            border-left: 6px solid #3fbded;
+        }
+        .reviews.individual.rightbar {
+            border-right: 5px solid #304f59;
+        }
+        .reviewstext {
+            margin-right: 25px;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+        .reviewstext.omar {
+            padding-top: 30px;
+        }
+        .reviewstext.herdy {
+            padding-top: 30px;
+        }
+        .reviewstext.alex {
+            padding-top: 30px;
+        }
+
+    }
+
+    /* FAQ ****************************/
+
+    .header.faq {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #304f59;
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+    }
+    .faqsheader {
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .faq {
+        font-family: Lato, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .faq.faqheader {
+        font-size: 32px;
+    }
+    .faq.faqsubheader {
+        font-family: Lato, sans-serif;
+    }
+    .faq.faqtext {
+        margin-top: 8px;
+        margin-bottom: 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+
+    /* Other **************************/
+
     .portfolio-text {
         margin-top: 93px;
     }
@@ -713,16 +880,6 @@ body.index {
         padding-bottom: 0px;
         text-align: center;
     }
-    .team-text {
-        width: 456px;
-        margin-top: 31px;
-        padding-right: 9px;
-    }
-    .name {
-        padding-top: 39px;
-        padding-bottom: 4px;
-    }
-
     .courseimg {
         margin-left: 76px;
         padding-left: 0px;
@@ -837,7 +994,7 @@ body.index {
         border: 1px solid #56bbea;
         border-radius: 8px;
     }
-    
+
     .newsletter-error {
         color: red;
     }
