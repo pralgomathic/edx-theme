@@ -218,7 +218,6 @@ html body, html, body {
     line-height: 21px;
     font-weight: 400;
     padding-top: 0px;
-    padding-bottom: 7px;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -374,7 +373,7 @@ body header.global.slim {
         opacity: 0.2;
     }
     .social-wrapper {
-        margin-top: -26px;
+        margin-top: -40px;
         margin-right: 0px;
         margin-left: 4px;
         padding-right: 0px;
@@ -552,6 +551,7 @@ body .homepage-content {
 
     .subheaders {
         margin-top: 20px;
+        padding-top: 40px;
         padding-bottom: 10px;
         font-family: Lato, sans-serif;
         font-weight: 300;
@@ -608,7 +608,7 @@ body .homepage-content {
 
     .section {
         margin-bottom: 0px;
-        padding-top: 40px;
+        padding-top: 0px;
         padding-bottom: 40px;
     }
     .section.header {
@@ -715,6 +715,11 @@ body .homepage-content {
         color: white;
         font-size: 14px;
         font-weight: 300;
+
+        a, a:visited, a:hover {
+            color: white;
+            font-weight: 300;
+        }
     }
     .whycc_head {
         padding-bottom: 10px;
@@ -725,7 +730,7 @@ body .homepage-content {
         text-transform: none;
     }
     .whycc {
-        margin-top: 95px;
+        margin-top: 90px;
     }
 
     /* How it works *******************/
@@ -835,7 +840,7 @@ body .homepage-content {
 
     .header.faq {
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         padding-top: 25px;
         padding-bottom: 25px;
         background-color: #304f59;
@@ -861,8 +866,11 @@ body .homepage-content {
     .faq.faqtext {
         margin-top: 8px;
         margin-bottom: 30px;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 400;
+    }
+    .w-container.faqcontent {
+        margin-bottom: 40px;
     }
 
 
@@ -942,6 +950,7 @@ body .homepage-content {
 
     .hiringpartners {
         width: 310px;
+        font-size: 12px;
     }
     .course-link-block {
         display: inline-block;
